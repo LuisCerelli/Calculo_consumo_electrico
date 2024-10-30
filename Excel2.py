@@ -3,7 +3,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.styles import Font
 
 # Cargar el archivo previamente creado
-wb = load_workbook("/Users/luisalbertocerelli/Desktop/00-Todo/03_Python_practicas/Hacer_excel/data/Control_de_Consumo_Energético.xlsx")
+wb = load_workbook("/data/Control_de_Consumo_Energético.xlsx")
 ws = wb.active
 
 # Añadir fórmulas en la columna 'Costo por Unidad ($/unidad)'
@@ -21,7 +21,7 @@ for col in range(1, 8):
     cell.font = Font(bold=True)
 
 # Guardar el archivo modificado
-output_path_ready = "/Users/luisalbertocerelli/Desktop/00-Todo/03_Python_practicas/Hacer_excel/data/Control_de_Consumo_Energético_Listo.xlsx"
+output_path_ready = "/data/Control_de_Consumo_Energético_Listo.xlsx"
 wb.save(output_path_ready)
 
 output_path_ready

@@ -15,7 +15,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Guardar el DataFrame en un archivo Excel
-output_path = "/Users/luisalbertocerelli/Desktop/00-Todo/03_Python_practicas/Hacer_excel/data/Control_de_Consumo_Energético.xlsx"
+output_path = "/data/Control_de_Consumo_Energético.xlsx"
 df.to_excel(output_path, index=False)
 
 output_path
